@@ -1,0 +1,68 @@
+[
+    {
+        "name": "Gengar",
+        "type": "Ghost",
+        "level": 62,
+        "weight_kg": 40.5,
+        "is_shiny": false,
+        "held_item": "Spell tag",
+        "skills": [
+            "Shadow Ball",
+            "Sludge Bomb",
+            "Dream Eater",
+            "Hypnosis"
+        ],
+        "stats": {
+            "hp": 60,
+            "attack": 65,
+            "defense": 60,
+            "sp_attack": 62,
+            "sp_defense": 130,
+            "speed": 110
+        }
+    },
+    {
+        "name": "Dragonite",
+        "type": "Dragon",
+        "level": 55,
+        "weight_kg": 210.0,
+        "is_shiny": false,
+        "held_item": "Dragon scale",
+        "skills": [
+            "Dragon Claw",
+            "Hurricane",
+            "Extreme Speed",
+            "Fire Punch"
+        ],
+        "stats": {
+            "hp": 91,
+            "attack": 134,
+            "defense": 95,
+            "sp_attack": 100,
+            "sp_defense": 100,
+            "speed": 80
+        }
+    },
+    {
+        "name": "Mewtwo",
+        "type": "Psychic",
+        "level": 70,
+        "weight_kg": 122.0,
+        "is_shiny": true,
+        "held_item": "Mind Plate",
+        "skills": [
+            "Psystrike",
+            "Shadow Ball",
+            "Ice Beam",
+            "Recover"
+        ],
+        "stats": {
+            "hp": 106,
+            "attack": 110,
+            "defense": 90,
+            "sp_attack": 154,
+            "sp_defense": 90,
+            "speed": 130
+        }
+    }
+]
