@@ -1,0 +1,59 @@
+
+$ git log
+commit ffbc3497559b4ec299d297a8f95c8262bad0da94 (HEAD -> main, origin/main, origin/HEAD)
+Merge: 0352680 9bd13ee
+Author: jpfon-12 <jpablof89@gmail.com>
+Date:   Mon May 18 09:35:18 2026 -0600
+
+    Merge pull request #1 from jpfon-12/completed-exercises
+    
+    Completed exercises
+
+commit 9bd13ee7fee403c6bedbc403a3a881d80d1c54b9 (origin/completed-exercises, completed-exercises)
+Author: Jose Pablo Fonseca <jpablof89@hotmail.com>
+Date:   Mon May 18 09:17:08 2026 -0600
+
+    Applied a change on Introduccion file for testing
+
+commit f8c502b53b221d9ac77156d18c9dcf69afa080c2
+Author: Jose Pablo Fonseca <jpablof89@hotmail.com>
+Date:   Mon May 18 08:56:59 2026 -0600
+
+    test: adding txt file to confirm renaming of branch
+
+commit b426072a494d814d9dcd3235ec0a50efc86b2e75 (origin/competed-exercises)
+Author: Jose Pablo Fonseca <jpablof89@hotmail.com>
+Date:   Mon May 18 08:13:05 2026 -0600
+
+    Uploading first exercises
+
+commit 0352680a38ebfeb4eb3d66b3ca059c0b1e80ed91
+Author: jpfon-12 <jpablof89@gmail.com>
+Date:   Sun May 17 19:02:56 2026 -0600
+
+    Initial commit
+
+
+****************************************************************************
+
+Explicación:
+
+1) b426072 (origin/competed-exercises) Uploading first exercises
+
+Qué cambió? -> Se subieron todos los ejercicios de los primeros tres modulos de Lyfter ("IT Essentials", "Lógica Programación" y "Python basico")
+Por qué se hizo ese cambio? -> Porque fue solicitado para iniciar utilizando Git de ahora en adelante para futuras entregas
+
+
+2) f8c502b test: adding txt file to confirm renaming of Branch
+
+Qué cambió? -> Se cambio el nombre del branch. Por error se nombro "competed-exercises", y se realizo el cambio a "completed-exercises", y se subio un archivo txt a modo de sync con GitHub. Sin embargo fue el comando 'git branch --set-upstream-to=origin/completed-exercises' el que ayudo a actualizar la referncia.
+Por qué se hizo ese cambio? -> Porque el nombre del branch estaba incorrecto y debia corregirse.
+
+3) 9bd13ee (origin/completed-exercises, completed-exercises) Applied a change on Introduccion file for testing
+
+Qué cambió? -> Se agrego una linea de codigo al file 'ejercicio2.py' de la carpeta Introduccion en Python Basico.
+Por qué se hizo ese cambio? -> para crear otro commit y testear que los cambios se reflejaban correctamente en el branch.
+
+
+
+
