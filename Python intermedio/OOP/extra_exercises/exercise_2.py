@@ -7,27 +7,32 @@ class Animal:
     def __init__(self, name):
         self.name = name
         
-    def speak(self, animal_sound):
-        return animal_sound
+    def speak(self):
+        return "Makes a sound"
 
 
 class Dog(Animal):
     def __init__(self, name):
         super().__init__(name)      
 
+    def speak(self):
+        return "Guau"
+
 
 class Cat(Animal):
     def __init__(self, name):
         super().__init__(name)
 
+    def speak(self):
+        return "Miau"
 
 
 
 dog = Dog("Firulais")
-print(dog.name)
-print(dog.speak("Guau"))
+print(f"Dog: {dog.name}")
+print(f"Animal sound: {dog.speak()}\n")
 
 cat = Cat("Minino")
-print(cat.name)
-print(cat.speak("Miau"))
+print(f"Cat: {cat.name}")
+print(f"Animal sound: {cat.speak()}")
 

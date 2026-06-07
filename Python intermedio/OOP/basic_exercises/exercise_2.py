@@ -5,19 +5,23 @@
 
 
 class Bus:
-
-    passengers = []
     
     def __init__(self, max_passengers):
         self.max_passengers = max_passengers
+        self.passengers = []
 
     
-    def add_passenger(self, person):
+    def get_on_passengers(self, person):
         if len(self.passengers) >= self.max_passengers:
-            print(f"The bus is full")
+            print(f"\nThe bus is full")
             return
-            
         self.passengers.append(person)
+
+
+    def get_off_passengers(self, person):
+        self.passengers.remove(person)
+
+
 
 
 class Person:
@@ -29,19 +33,23 @@ class Person:
         return self.name
 
 
+bus = Bus(3) #sets the max number of passengers 
 
 person1 = Person("Juan")
 person2 = Person("Maria")
 person3 = Person("Miguel")
 person4 = Person("Ana")
 
-bus = Bus(3)
-bus.add_passenger(person1)
-bus.add_passenger(person2)
-bus.add_passenger(person3)
-bus.add_passenger(person4)
+bus.get_on_passengers(person1)
+bus.get_on_passengers(person2)
+bus.get_on_passengers(person3)
+bus.get_on_passengers(person4)
+print(f"\nPassengers on the bus: {bus.passengers}")
 
+bus.get_off_passengers(person1)
+bus.get_off_passengers(person2)
+bus.get_off_passengers(person3)
+print(f"\nPassengers got off the bus: {bus.passengers}")
 
-print(bus.passengers)
 
 
