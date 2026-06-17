@@ -10,7 +10,9 @@ class BMI:
                     "Error. Please enter positive numbers"
                 )
             print(f"The parameters of the function are weight: {weight} and height: {height}")
-            return func(weight, height)
+            result = func(weight, height)
+            print(f"BMI : {result}")
+            return result
         return wrapper
 
 
@@ -21,6 +23,6 @@ class BMI:
 
 
 bmi = BMI
-print(f"BMI = {bmi.calculate_bmi(85, 1.75)}")
+bmi.calculate_bmi(85, 1.75)
 
 
