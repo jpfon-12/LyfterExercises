@@ -9,8 +9,9 @@ class UserMath:
 
     def log_call(func):
         def wrapper(first_number, second_number):
-            print(f"Func: {func.__name__} - Arguments: {first_number}, {second_number} - [{datetime.now()}] - Result: {func(first_number, second_number)}")
-            return func(first_number, second_number)
+            result = func(first_number, second_number)
+            print(f"Func: {func.__name__} - Arguments: {first_number}, {second_number} - [{datetime.now()}] - Result: {result}")
+            return result
         return wrapper
     
 

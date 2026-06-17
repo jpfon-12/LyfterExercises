@@ -4,11 +4,11 @@ class Triangle:
 
     def numbers_only(func):
         def wrapper(base, height):
-            if isinstance(base, str) or isinstance(height, str):
+            if not isinstance(base, (int, float)) or not isinstance(height, (int, float)):
                 raise ValueError(
                     "Error. Only numbers allowed"
-                    )
-            return func(base, height)
+                    ) 
+            return func(base, height)    
         return wrapper
     
     @numbers_only
@@ -18,5 +18,5 @@ class Triangle:
     
 
 triangle = Triangle
-print(triangle.calculate_area(3,7))
+print(triangle.calculate_area(3,3))
 
