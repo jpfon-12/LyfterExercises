@@ -6,12 +6,6 @@ negative_number = False
 for i in range(0, len(my_list)):
     if my_list[i] <= 0:
         negative_number = True
-        
-    #break
-    # else:
-    #else:
-     #   print("Todos los elementos de la lista son numeros positivos")
-        
 
 if negative_number:
     print("Hay al menos un numero negativo o cero")
