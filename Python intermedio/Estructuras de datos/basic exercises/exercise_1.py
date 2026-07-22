@@ -37,6 +37,7 @@ class Stack(LinkedList):
         current_node = self.head.next    
         deleted_item = self.head    
         self.head = current_node
+        return deleted_item.data
 
 
 first_node = Node("Dirty dish 1" )
@@ -51,8 +52,8 @@ stack.print_structure()
 stack.push(Node("New dirty dish"))
 print('--------------')
 stack.print_structure()
-# print('llamando a pop()------')
-# print(stack.pop())
-# print('****')
-# stack.print_structure()
+print('calling pop()------')
+print(f"Item deleted: {stack.pop()}")
+print('****')
+stack.print_structure()
 

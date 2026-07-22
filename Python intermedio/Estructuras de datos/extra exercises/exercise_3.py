@@ -93,10 +93,10 @@ class DoubleLinkedList:
         while(current_node.next is not None):
             current_node = current_node.next
         while(current_node is not None):
-            if current_node.prev is None:
-                my_string += current_node.data
-            else:
+            if current_node.prev is not None:
                 my_string += current_node.data + " -> "
+            else:
+                my_string += current_node.data 
             current_node = current_node.prev
         print(my_string)
         
