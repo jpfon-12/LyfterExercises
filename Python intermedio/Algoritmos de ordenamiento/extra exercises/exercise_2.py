@@ -13,7 +13,6 @@ def bubble_sort_steps(list_to_sort):
             current_number = list_to_sort[index]
             next_number = list_to_sort[index + 1]
             print(f"Iteration: {outer_index}, {index}. Current number: {current_number}, Next number: {next_number}")
-            iteration += 1
 
             if current_number > next_number:
                 print(f"--> {current_number} is higher than {next_number}. Swapping numbers\n")
@@ -22,7 +21,7 @@ def bubble_sort_steps(list_to_sort):
                 has_changes = True
                 swapping += 1
                 # print(f"List so far: {list_to_sort}\n")
-
+        iteration += 1
         if not has_changes:
             break
         

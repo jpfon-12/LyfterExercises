@@ -8,16 +8,17 @@
 
 
 def validated_bubble_sort(list_to_sort):
-    try:
-        if list_to_sort == []:
-            print("Error, the list is empty ")
-            return []   
-        bubble_sort(list_to_sort)
-        return list_to_sort
+    if list_to_sort == []:
+        print("Error: the list is empty ")
+        return []  
+    for element in list_to_sort:
+        if not isinstance(element, (int, float)): 
+            print("Error: the list must contain numbers only")
+            return [] 
 
-    except TypeError as er:
-        print(f"Error, the list contains letters - {er}")
-        return []
+    bubble_sort(list_to_sort)
+    return list_to_sort
+
 
 
 def bubble_sort(list_to_sort):
