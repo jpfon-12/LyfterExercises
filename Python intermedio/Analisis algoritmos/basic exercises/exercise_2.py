@@ -1,0 +1,55 @@
+# Analice los siguientes algoritmos usando la Big O Notation:
+
+# print_numbers_times_2
+
+def print_numbers_times_2(numbers_list):
+	for number in numbers_list:              #n
+		print(number * 2)                    #n
+
+#Big O = 2n
+#Big O = O(n)
+
+
+#=======================================================
+
+#check_if_lists_have_an_equal
+
+def check_if_lists_have_an_equal(list_a, list_b):
+	for element_a in list_a:                #n
+		for element_b in list_b:            #n^2
+			if element_a == element_b:      #n^2
+				return True                 #n^2
+				
+	return False                            #n
+
+#Big O = 3n^2 + 2n  
+#Big O = O(n^2)
+
+
+#========================================================
+
+#print_10_or_less_elements
+
+def print_10_or_less_elements(list_to_print):
+	list_len = len(list_to_print)               #1
+	for index in range(min(list_len, 10)):      #1 - the loop runs 10 times regardless of the list size
+		print(list_to_print[index])             #1
+
+#Big O = 1 + 1 + 1
+#Big O = O(1)
+
+#=======================================================
+
+#generate_list_trios
+
+def generate_list_trios(list_a, list_b, list_c):
+	result_list = []                                                                #1
+	for element_a in list_a:                                                        #n
+		for element_b in list_b:                                                    #n^2
+			for element_c in list_c:                                                #n^3
+				result_list.append(f'{element_a} {element_b} {element_c}')          #n^3
+				
+	return result_list                                                              #1
+
+#Big O = n + n^2 + 2n^3 + 1 + 1
+#Big O = O(n^3)
