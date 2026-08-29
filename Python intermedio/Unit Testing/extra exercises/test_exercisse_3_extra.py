@@ -13,9 +13,10 @@ import pytest
 def test_read_lines_returns_expected_lines():
     content = "line1\nline2\nline3\n"
  
-    with patch("exercise_3_extra.open", mock_open(read_data=content)):
+    with patch("exercise_3_extra.open", mock_open(read_data=content)) as mocked_open:
         result = read_lines("path.txt")
     assert result == ["line1\n", "line2\n", "line3\n"]
+    mocked_open.assert_called_once_with("path.txt", "r")
 
 
 def test_read_lines_raises_file_not_found():
