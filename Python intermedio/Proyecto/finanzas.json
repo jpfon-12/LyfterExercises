@@ -1,0 +1,142 @@
+{
+    "categories": [
+        {
+            "name": "Comida",
+            "color": "#ff8000"
+        },
+        {
+            "name": "Transporte",
+            "color": "#0080ff"
+        },
+        {
+            "name": "Trabajo",
+            "color": "#00ff00"
+        },
+        {
+            "name": "Suministros",
+            "color": "#ffff00"
+        },
+        {
+            "name": "Educacion",
+            "color": "#8080ff"
+        },
+        {
+            "name": "Entretenimiento",
+            "color": ""
+        }
+    ],
+    "transactions": [
+        {
+            "title": "Salario octubre",
+            "type_transaction": "income",
+            "amount": 850000.0,
+            "category": "Trabajo",
+            "date": "01/10/2026"
+        },
+        {
+            "title": "Supermercado",
+            "type_transaction": "expense",
+            "amount": -45000.5,
+            "category": "Comida",
+            "date": "03/10/2026"
+        },
+        {
+            "title": "Bus mensual",
+            "type_transaction": "expense",
+            "amount": -12000.0,
+            "category": "Transporte",
+            "date": "05/10/2026"
+        },
+        {
+            "title": "Cuadernos y lapices",
+            "type_transaction": "expense",
+            "amount": -6500.0,
+            "category": "Suministros",
+            "date": "08/10/2026"
+        },
+        {
+            "title": "Cine",
+            "type_transaction": "expense",
+            "amount": -7500.0,
+            "category": "Entretenimiento",
+            "date": "10/10/2026"
+        },
+        {
+            "title": "Curso de ingles",
+            "type_transaction": "expense",
+            "amount": -35000.0,
+            "category": "Educacion",
+            "date": "12/10/2026"
+        },
+        {
+            "title": "Freelance diseño",
+            "type_transaction": "income",
+            "amount": 120000.0,
+            "category": "Trabajo",
+            "date": "15/10/2026"
+        },
+        {
+            "title": "Almuerzo",
+            "type_transaction": "expense",
+            "amount": -4500.0,
+            "category": "Comida",
+            "date": "18/10/2026"
+        },
+        {
+            "title": "Gasolina",
+            "type_transaction": "expense",
+            "amount": -22000.0,
+            "category": "Transporte",
+            "date": "18/10/2026"
+        },
+        {
+            "title": "Venta de libro",
+            "type_transaction": "income",
+            "amount": 15000.75,
+            "category": "Educacion",
+            "date": "20/10/2026"
+        },
+        {
+            "title": "Pizza",
+            "type_transaction": "expense",
+            "amount": -9800.0,
+            "category": "Comida",
+            "date": "25/10/2026"
+        },
+        {
+            "title": "Salario noviembre",
+            "type_transaction": "income",
+            "amount": 850000.0,
+            "category": "Trabajo",
+            "date": "01/11/2026"
+        },
+        {
+            "title": "Mouse y teclado",
+            "type_transaction": "expense",
+            "amount": -28000.0,
+            "category": "Suministros",
+            "date": "03/11/2026"
+        },
+        {
+            "title": "Taxi aeropuerto",
+            "type_transaction": "expense",
+            "amount": -15000.0,
+            "category": "Transporte",
+            "date": "07/11/2026"
+        },
+        {
+            "title": "Cena amigos",
+            "type_transaction": "expense",
+            "amount": -18500.0,
+            "category": "Comida",
+            "date": "10/11/2026"
+        },
+        {
+            "title": "Reembolso transporte",
+            "type_transaction": "income",
+            "amount": 5000.0,
+            "category": "Transporte",
+            "date": "12/11/2026"
+        }
+    ]
+}
